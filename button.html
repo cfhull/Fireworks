@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<link rel="stylesheet" href="button.css">
+	<link rel="stylesheet" type="text/css" href="buttonStyle.css" />	
+	<link rel="stylesheet" type="text/css" href="style/fireworks.css" media="screen" />
+	<script type="text/javascript" src="script/soundmanager2-nodebug-jsmin.js"></script>
+	
+	<script type="text/javascript" src="script/fireworks.js"></script>
 	</head>
 	<body>
-		<button type="button">Click Me!</button>
+	
+		<div id="fireworks-template">
+			<div id="fw" class="firework"></div>
+			<div id="fp" class="fireworkParticle"><img src="image/particles.gif" alt="" /></div>
+		</div>
+		<div id="fireContainer"></div>
+		
+		<button id="button" onclick="createFirework(22,19,2,5,null,null,null,null,false,true);return false" type="button">Click Me!</button>
+	
 	</body>
 </html>
